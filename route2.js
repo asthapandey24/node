@@ -39,14 +39,14 @@ if(url === '/'){
          res.write('</html>');
          res.end();
    };
-  // module.exports = requestHandler; // (we can add here different objects key value pair but for this we use request)
-   // module.exports = {
-   //    handler: requestHandler,
-   //    some_text : 'Some hard coded text'
-   // }
+   //module.exports = requestHandler; // (we can add here different objects key value pair but for this we use request)
+    module.exports = {
+      handler: requestHandler,
+       some_text : 'Some hard coded text'
+    }
 
     // module.exports.handler = requestHandler;
     // module.exports.some_text = 'some hard coded text';
        
-     exports.handler = requestHandler;
-     exports.some_text = 'some hard coded text';
+    // exports.handler = requestHandler;
+    // exports.some_text = 'some hard coded text';
